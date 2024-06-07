@@ -15,33 +15,32 @@
       <div class="row">
         <div class="display-t">
           <div class="display-tc">
-            <h1>Bienvenido al sitio de hospedaje DevDreamTeam</h1>
-            <h2>Cabañas y habitaciones</h2>
+            <h1>Bienvenido a Cabañas FIUBA</h1>
+            <h2>Un complejo donde podrás descansar, desconectarte de la rutina y disfrutar de nuestras bellisimas vistas.</h2> 
+            <p>
+              <a href="{{url_for('reservar')}}" class="btn-1">RESERVAR</a>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="d-flex justify-content-center align-items-center flex-column px-3 my-4">
-    <div class="container d-flex justify-content-evenly my-5" style="width:60%">
-	    <a href="{{ url_for('cabins') }}"><button type="button" class="btn btn-dark">Ver Cabañas</button></a>
-    </div>
-  </main>
-
   <div id="about" class="section">
     <div class="container">
       <div class="row">
         <div class="columna-imagen">
-          <img src="" alt="ejemplo de cabaña">
+          <img src="/static/images/bg2.png" alt="imagen del complejo">
         </div>
         <div class="columna-texto">
           <div class="texto">
             <h2>Nuestras cabañas</h2>
-            <p>Descripcion de la calidad de nuestras cabañas</p>
-            <p>2da parte de la descripcion</p>
             <p>
-              <a href="cabins.html" class="btn-primary">Cabañas</a>
+              Contamos con cabañas de categoría, cálidas y luminosas, con excelentes equipamientos y muebles rústicos artesanales, con capacidad para 2 a 6 personas.<br>
+              Verano, Otoño, Invierno y Primavera. Con los cambios del año, sin importar el clima y las condiciones, venite a disfrutar de tus vacaciones. Con familia o amigos.
+            </p>
+            <p>
+              <a href="{{ url_for('cabins') }}"><button type="button" class="btn btn-dark">Ver Cabañas</button></a>
             </p>
           </div>
         </div>
@@ -54,34 +53,53 @@
       <div class="row">
         <div class="cabin-wrap">
           <div class="cabin">
-            <img src="#" class="img-cabin" alt="Imagen cabaña 1">
-            <h3>Titulo cabaña 1</h3>
+            <img src="/static/images/cabaña.jpg" class="img-cabin" alt="Imagen cabaña 1">
+            <h3>Cabaña Superior Marrón</h3>
             <span class="cabin-price">$$$</span>
-            <p>Descripcion breve de la cabaña 1</p>
+            <p>Morro es la cabaña más amplia. Tiene una amplio dormitorio secundario y un living comedor muy confortable y luminoso. Es de material y está revestida en madera y roca. Todos los ventanales y aberturas son con termopanel; la calefacción es central, de regulación individual, con radiadores. La decoración es tipo campestre patagónica y está ubicada en la parte más alta de nuestro predio. <br>
+              •Dos dormitorios: uno matrimonial y otro con cuatro camas.
+              •Living. <br>
+              •Baño completo con ante-baño. <br>
+              •Deck con asador individual y mesa de asado.
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
           </div>
         </div>
         <div class="cabin-wrap">
           <div class="cabin">
-            <img src="#" class="img-cabin" alt="Imagen cabaña 2">
-            <h3>Titulo cabaña 2</h3>
+            <img src="/static/images/c2.png" class="img-cabin" alt="Imagen cabaña 2">
+            <h3>Cabaña Laguna</h3>
             <span class="cabin-price">$$$</span>
-            <p>Descripcion breve de la cabaña 2</p>
+            <p> Bella Vista es la cabaña más luminosa. Está en la planta alta de las Cabañas del Parque disfrutando de mucha luz y lindas vistas al Cerro Goye.
+              Es de material y está revestida en madera y roca. Todos los ventanales y aberturas son con termopanel; la calefacción es central, de regulación individual, con radiadores. <br>
+              •Un dormitorio matrimonial y dos plazas en el living. <br>
+              •Cocina comedor. <br>
+              •Baño completo. <br>
+              •Balcón con asador y mesita de asado.
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
           </div>
         </div>
         <div class="cabin-wrap">
           <div class="cabin">
-            <img src="#" class="img-cabin" alt="Imagen cabaña 3">
-            <h3>Titulo cabaña 3</h3>
+            <img src="/static/images/c3.png" class="img-cabin" alt="Imagen cabaña 3">
+            <h3>Cabaña alto azul</h3>
             <span class="cabin-price">$$$</span>
-            <p>Descripcion breve de la cabaña 3</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem 
+              aliquid reiciendis ratione ipsam quia aut, vel suscipit, tenetur voluptate
+               error minima ipsum officiis dolor porro adipisci laborum atque? Minima?
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
           </div>
         </div>
           <div class="cabin-wrap">
             <div class="cabin">
-              <img src="#" class="img-cabin" alt="Imagen cabaña 4">
+              <img src="/static/images/c3.png" class="img-cabin" alt="Imagen cabaña 4">
               <h3>Titulo cabaña 4</h3>
               <span class="cabin-price">$$$</span>
-              <p>Descripcion breve de la cabaña 4</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatibus in earum sint eligendi illo expedita repudiandae placeat sit. Et sed saepe id officia quae aspernatur earum eligendi magnam minima?
+              </p>
+              <a href="#" class="btn-1">Informacion</a>
             </div>
           </div>
       </div>
@@ -91,24 +109,32 @@
   <div id="section-resenia" class="section">
     <div class="container">
       <div class="row">
+        <div class="texto">
+          <h2>Opiniones de nuestros clientes</h2>
+        </div>
         <div class="column-resenia">
           <div class="resenia-box">
             <img src="#" class="img-bg-resenia" alt="Imagen de fondo para la reseña 1">
           </div>
           <div  class="resenia-text">
-            <span class="fecha-posted">fecha de la reseña 1</span>
-            <h3>usuario 1</h3>
-            <p>1era reseña Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aut nam inventore quisquam fugiat tempora quas totam officiis sunt nobis, esse, ad aliquid obcaecati saepe voluptatibus autem. Officia, corporis distinctio?</p>
+            <span class="fecha-posted">07/01/2022</span>
+            <h4>Susana Scarpazza</h4>
+            <p>
+              Un lugar único, rodeado de un hermoso bosque, las cabañas muy completas, no falta nada, entorno súper natural,  cerca de supermercados y colectivos.
+              Sus dueños son súper atentos y siempre predispuestos ante cualquier necesidad, un lugar único.
+            </p>
           </div>
         </div>
         <div class="column-resenia">
           <div class="resenia-box">
-            <img src="#" class="img-bg-resenia" alt="Imagen de fondo para la reseña 2">
+            <img src="/static/images/bg2.png" class="img-bg-resenia" alt="Imagen de fondo para la reseña 2">
           </div>
           <div  class="resenia-text">
-            <span class="fecha-posted">fecha de la reseña 2</span>
-            <h3>usuario 2</h3>
-            <p>2da reseña Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aut nam inventore quisquam fugiat tempora quas totam officiis sunt nobis, esse, ad aliquid obcaecati saepe voluptatibus autem. Officia, corporis distinctio?</p>
+            <span class="fecha-posted">03/01/2022</span>
+            <h4>Matias Parusini</h4>
+            <p>
+              Excelente atención. Las cabañas amplias, limpias, con todo lo necesario para pasar unas vacaciones hermosas. Muy completa la vajilla y los utensilios para cocinar. 
+            </p>
           </div>
         </div>
         <div class="column-resenia">
@@ -116,14 +142,15 @@
             <img src="#" class="img-bg-resenia" alt="Imagen de fondo para la reseña">
           </div>
           <div  class="resenia-text">
-            <span class="fecha-posted">fecha de la reseña 3</span>
-            <h3>usuario 3</h3>
-            <p>3era reseña Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aut nam inventore quisquam fugiat tempora quas totam officiis sunt nobis, esse, ad aliquid obcaecati saepe voluptatibus autem. Officia, corporis distinctio?</p>
+            <span class="fecha-posted">22/01/2023</span>
+            <h4>Federico Vargas</h4>
+            <p>
+              Excelente atención. Las cabañas amplias, limpias, con todo lo necesario para pasar unas vacaciones hermosas. Muy completa la vajilla y los utensilios para cocinar. 
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </body>
 </html>
