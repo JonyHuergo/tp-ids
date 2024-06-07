@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospedaje</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css', _external=True)}}">
 </head>
 <body>
 
@@ -25,11 +26,10 @@
   <main class="d-flex justify-content-center align-items-center flex-column px-3 my-4">
     <div class="container d-flex justify-content-evenly my-5" style="width:60%">
 	    <a href="{{ url_for('cabins') }}"><button type="button" class="btn btn-dark">Ver Cabañas</button></a>
-	    <a href="{{ url_for('habitaciones') }}"><button type="button" class="btn btn-primary">Ver Habitaciones</button></a>
     </div>
   </main>
 
-  <div id="about-us" class="section">
+  <div id="about" class="section">
     <div class="container">
       <div class="row">
         <div class="columna-imagen">
@@ -52,32 +52,32 @@
   <div id="main" class="section">
     <div class="container">
       <div class="row">
-        <div class="column-cabin">
-          <div class="cabin-container">
+        <div class="cabin-wrap">
+          <div class="cabin">
             <img src="#" class="img-cabin" alt="Imagen cabaña 1">
             <h3>Titulo cabaña 1</h3>
             <span class="cabin-price">$$$</span>
             <p>Descripcion breve de la cabaña 1</p>
           </div>
         </div>
-        <div class="column-cabin">
-          <div class="cabin-container">
+        <div class="cabin-wrap">
+          <div class="cabin">
             <img src="#" class="img-cabin" alt="Imagen cabaña 2">
             <h3>Titulo cabaña 2</h3>
             <span class="cabin-price">$$$</span>
             <p>Descripcion breve de la cabaña 2</p>
           </div>
         </div>
-        <div class="column-cabin">
-          <div class="cabin-container">
+        <div class="cabin-wrap">
+          <div class="cabin">
             <img src="#" class="img-cabin" alt="Imagen cabaña 3">
             <h3>Titulo cabaña 3</h3>
             <span class="cabin-price">$$$</span>
             <p>Descripcion breve de la cabaña 3</p>
           </div>
         </div>
-          <div class="column-cabin">
-            <div class="cabin-4-container">
+          <div class="cabin-wrap">
+            <div class="cabin">
               <img src="#" class="img-cabin" alt="Imagen cabaña 4">
               <h3>Titulo cabaña 4</h3>
               <span class="cabin-price">$$$</span>
@@ -109,6 +109,7 @@
             <span class="fecha-posted">fecha de la reseña 2</span>
             <h3>usuario 2</h3>
             <p>2da reseña Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aut nam inventore quisquam fugiat tempora quas totam officiis sunt nobis, esse, ad aliquid obcaecati saepe voluptatibus autem. Officia, corporis distinctio?</p>
+          </div>
         </div>
         <div class="column-resenia">
           <div class="resenia-box">
@@ -118,6 +119,7 @@
             <span class="fecha-posted">fecha de la reseña 3</span>
             <h3>usuario 3</h3>
             <p>3era reseña Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aut nam inventore quisquam fugiat tempora quas totam officiis sunt nobis, esse, ad aliquid obcaecati saepe voluptatibus autem. Officia, corporis distinctio?</p>
+          </div>
         </div>
       </div>
     </div>
