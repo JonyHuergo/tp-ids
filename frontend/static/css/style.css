@@ -10,6 +10,87 @@ body {
     background: #E1E2E6;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(
+        rgb(0, 0, 0),
+        rgb(0, 0, 0));
+    background-size: cover;
+    min-height: 13vh;
+    display: flex;
+    align-items: center; 
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ce9678;
+}
+
+#menu {
+    display: none
+}
+
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+
+}
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
 #page {
     position: relative;
     overflow-x: hidden;
@@ -250,6 +331,42 @@ h2 {
     color: #C5C5C5;
     display: block;
     margin-bottom: 15px;
+}
+
+.footer {
+    padding: 25px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+
+}
+.link a {
+    font-size: 16px;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+
+    
+}
+
+.redsocial {
+    width: 30px;
+    height: 30px;
+}
+
+.logos ul {
+    display: flex;
+    padding: 0%;
+    justify-content: space-between;
 }
 
 .btn {
