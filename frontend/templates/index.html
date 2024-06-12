@@ -5,7 +5,7 @@
   <div id="about" class="section">
     <div class="container">
       <div class="row">
-        <div class="columna-imagen">
+        <div class="img-wrap">
           <img src="/static/images/SuperiorG.jpg" alt="imagen del complejo">
         </div>
         <div class="columna-texto">
@@ -16,7 +16,7 @@
               Verano, Otoño, Invierno y Primavera. Con los cambios del año, sin importar el clima y las condiciones, venite a disfrutar de tus vacaciones. Con familia o amigos.
             </p>
             <p>
-              <a href="{{ url_for('cabins') }}"><button type="button" class="btn btn-1">Ver Cabañas</button></a>
+              <a href="{{ url_for('cabins') }}"><button type="button" class="btn-1">Ver Cabañas</button></a>
             </p>
           </div>
         </div>
@@ -25,62 +25,55 @@
   </div>
 
   <div id="main" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="cabin-wrap">
-          <div class="cabin">
-            <img src="/static/images/cabaña.jpg" class="img-cabin" alt="Imagen cabaña 1">
-            <h3>Cabaña Superior Marrón</h3>
-            <span class="cabin-price">$$$</span>
-            <p>Morro es la cabaña más amplia. Tiene una amplio dormitorio secundario y un living comedor muy confortable y luminoso. Es de material y está revestida en madera y roca. Todos los ventanales y aberturas son con termopanel; la calefacción es central, de regulación individual, con radiadores. La decoración es tipo campestre patagónica y está ubicada en la parte más alta de nuestro predio. <br>
-              •Dos dormitorios: uno matrimonial y otro con cuatro camas.
-              •Living. <br>
-              •Baño completo con ante-baño. <br>
-              •Deck con asador individual y mesa de asado.
-            </p>
-            <a href="#" class="btn-1">Informacion</a>
-          </div>
+    <div class="main-container">
+      <h2> Las mejores cabañas</h2>
+      <p class="txt-p"> Te invitamos a Cabañas Fiuba donde podrás descansar, desconectarte de la rutina y disfrutar de nuestras bellisimas vistas. <br>
+      </p>
+
+      <div class="cabin-wrap">
+        <div class="cabin">
+          <img src="/static/images/Cabañam.jpeg" class="img-cabin" alt="Imagen cabaña 1">
+          <h3>Cabaña Superior Marrón</h3>
+          <span class="cabin-price">99999$</span>
+          <p>Morro es la cabaña más amplia. Tiene una amplio dormitorio secundario y un living comedor muy confortable y luminoso. Es de material y está revestida en madera y roca. Todos los ventanales y aberturas son con termopanel; la calefacción es central, de regulación individual, con radiadores. La decoración es tipo campestre patagónica y está ubicada en la parte más alta de nuestro predio. <br>
+            •Dos dormitorios: uno matrimonial y otro con cuatro camas.
+            •Living. <br>
+            •Baño completo con ante-baño. <br>
+            •Deck con asador individual y mesa de asado.
+          </p>
         </div>
-        <div class="cabin-wrap">
-          <div class="cabin">
-            <img src="/static/images/cabañaf.jpg" class="img-cabin" alt="Imagen cabaña 2">
-            <h3>Cabaña Laguna</h3>
-            <span class="cabin-price">$$$</span>
-            <p> Bella Vista es la cabaña más luminosa. Está en la planta alta de las Cabañas del Parque disfrutando de mucha luz y lindas vistas al Cerro Goye.
-              Es de material y está revestida en madera y roca. Todos los ventanales y aberturas son con termopanel; la calefacción es central, de regulación individual, con radiadores. <br>
-              •Un dormitorio matrimonial y dos plazas en el living. <br>
-              •Cocina comedor. <br>
-              •Baño completo. <br>
-              •Balcón con asador y mesita de asado.
-            </p>
-            <a href="#" class="btn-1">Informacion</a>
-          </div>
+        <div class="cabin">
+          <img src="/static/images/Cabañam.jpeg" class="img-cabin" alt="Imagen cabaña 2">
+          <h3>Cabaña Laguna</h3>
+          <span class="cabin-price">99999$</span>
+          <p> Bella Vista es la cabaña más luminosa. Está en la planta alta de las Cabañas del Parque disfrutando de mucha luz y lindas vistas al Cerro Goye.
+            Es de material y está revestida en madera y roca. Todos los ventanales y aberturas son con termopanel; la calefacción es central, de regulación individual, con radiadores. <br>
+            •Un dormitorio matrimonial y dos plazas en el living. <br>
+            •Cocina comedor. <br>
+            •Baño completo. <br>
+            •Balcón con asador y mesita de asado.
+          </p>
         </div>
-        <div class="cabin-wrap">
-          <div class="cabin">
-            <img src="/static/images/CabañaL.jpg" class="img-cabin" alt="Imagen cabaña 3">
-            <h3>Cabaña alto azul</h3>
-            <span class="cabin-price">$$$</span>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem 
-              aliquid reiciendis ratione ipsam quia aut, vel suscipit, tenetur voluptate
-               error minima ipsum officiis dolor porro adipisci laborum atque? Minima?
-            </p>
-            <a href="#" class="btn-1">Informacion</a>
-          </div>
+        <div class="cabin">
+          <img src="/static/images/Cabañam.jpeg" class="img-cabin" alt="Imagen cabaña 3">
+          <h3>Cabaña alto azul</h3>
+          <span class="cabin-price">99999$</span>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem 
+            aliquid reiciendis ratione ipsam quia aut, vel suscipit, tenetur voluptate
+             error minima ipsum officiis dolor porro adipisci laborum atque? Minima?
+          </p>
         </div>
-          <div class="cabin-wrap">
-            <div class="cabin">
-              <img src="/static/images/CabañaP.jpg" class="img-cabin" alt="Imagen cabaña 4">
-              <h3>Titulo cabaña 4</h3>
-              <span class="cabin-price">$$$</span>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatibus in earum sint eligendi illo expedita repudiandae placeat sit. Et sed saepe id officia quae aspernatur earum eligendi magnam minima?
-              </p>
-              <a href="#" class="btn-1">Informacion</a>
-            </div>
-          </div>
+        <div class="cabin">
+          <img src="/static/images/Cabañam.jpeg" class="img-cabin" alt="Imagen cabaña 4">
+          <h3>Titulo cabaña 4</h3>
+          <span class="cabin-price">99999$</span>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatibus in earum sint eligendi illo expedita repudiandae placeat sit. Et sed saepe id officia quae aspernatur earum eligendi magnam minima?
+          </p>
+        </div>
       </div>
+      <a href="#" class="btn-1">Informacion</a>
     </div>
-  </div>
+  </div>  
 
   <div id="section-resenia" class="section">
     <div class="container">
@@ -88,41 +81,43 @@
         <div class="texto">
           <h2>Opiniones de nuestros clientes</h2>
         </div>
+      </div>
+      <div class="row">
         <div class="column-resenia">
           <div class="resenia-box">
-            <img src="/static/images/Susana.jpg" class="img-bg-resenia" alt="Imagen de fondo para la reseña 1">
-          </div>
-          <div  class="resenia-text">
-            <span class="fecha-posted">07/01/2022</span>
-            <h4>Susana Scarpazza</h4>
-            <p>
-              Un lugar único, rodeado de un hermoso bosque, las cabañas muy completas, no falta nada, entorno súper natural,  cerca de supermercados y colectivos.
-              Sus dueños son súper atentos y siempre predispuestos ante cualquier necesidad, un lugar único.
-            </p>
+            <img src="/static/images/cab.jpg" class="img-bg-resenia" alt="Imagen de fondo para la reseña 1">
+            <div  class="resenia-text">
+              <span class="fecha-posted">07/01/2022</span>
+              <h4>Susana Scarpazza</h4>
+              <p>
+                Un lugar único, rodeado de un hermoso bosque, las cabañas muy completas, no falta nada, entorno súper natural,  cerca de supermercados y colectivos.
+                Sus dueños son súper atentos y siempre predispuestos ante cualquier necesidad, un lugar único.
+              </p>
+            </div>
           </div>
         </div>
         <div class="column-resenia">
           <div class="resenia-box">
-            <img src="/static/images/Mati.jpg" class="img-bg-resenia" alt="Imagen de fondo para la reseña 2">
-          </div>
-          <div  class="resenia-text">
-            <span class="fecha-posted">03/01/2022</span>
-            <h4>Matias Parusini</h4>
-            <p>
-              Excelente atención. Las cabañas amplias, limpias, con todo lo necesario para pasar unas vacaciones hermosas. Muy completa la vajilla y los utensilios para cocinar. 
-            </p>
+            <img src="/static/images/cab.jpg" class="img-bg-resenia" alt="Imagen de fondo para la reseña 2">
+            <div  class="resenia-text">
+              <span class="fecha-posted">03/01/2022</span>
+              <h4>Matias Parusini</h4>
+              <p>
+                Excelente atención. Las cabañas amplias, limpias, con todo lo necesario para pasar unas vacaciones hermosas. Muy completa la vajilla y los utensilios para cocinar. 
+              </p>
+            </div>
           </div>
         </div>
         <div class="column-resenia">
           <div class="resenia-box">
-            <img src="static/images/Fede.jpg" class="img-bg-resenia" alt="Imagen de fondo para la reseña">
-          </div>
-          <div  class="resenia-text">
-            <span class="fecha-posted">22/01/2023</span>
-            <h4>Federico Vargas</h4>
-            <p>
-              Excelente atención. Las cabañas amplias, limpias, con todo lo necesario para pasar unas vacaciones hermosas. Muy completa la vajilla y los utensilios para cocinar. 
-            </p>
+            <img src="static/images/cab.jpg" class="img-bg-resenia" alt="Imagen de fondo para la reseña">
+            <div  class="resenia-text">
+              <span class="fecha-posted">22/01/2023</span>
+              <h4>Federico Vargas</h4>
+              <p>
+                Excelente atención. Las cabañas amplias, limpias, con todo lo necesario para pasar unas vacaciones hermosas. Muy completa la vajilla y los utensilios para cocinar. 
+              </p>
+            </div>
           </div>
         </div>
       </div>
