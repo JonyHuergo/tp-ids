@@ -38,6 +38,11 @@ def reservar():
     data = eval(data)
     return render_template('reservar.html', data=data, id=cabin_id)
 
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
+
+
 @app.route('/filtered_cabins', methods=['POST'])
 def filtered_cabins():
     fecha_entrada = request.form['fechaIngreso']

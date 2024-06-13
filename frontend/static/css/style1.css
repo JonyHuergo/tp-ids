@@ -113,7 +113,7 @@ header .button-reservar:active {
     background: linear-gradient(135deg,
             rgba(163, 121, 66, 0.6) 0%,
             rgba(100, 127, 108, 0.6) 40%,
-            rgba(163, 121, 66, 0.6));
+            rgba(143, 102, 49, 0.6));
 }
 
 header .button-reservar:active::before,
@@ -123,7 +123,7 @@ header .button-reservar:active::after {
 }
 
 
-#titulo_reservas {
+#titulo_reservas{
     min-height: 30vh;
 }
 
@@ -171,7 +171,7 @@ header .button-reservar:active::after {
     text-align: center;
 }
 
-.cabaña-content h2 {
+.cabaña-content h2, .title-container h2 {
     font-size: 55px;
     line-height: 70px;
     color: #323337;
@@ -411,4 +411,27 @@ section.cabaña#reservar {
     height: 200px;
     object-fit: cover;
     padding-bottom: 10px;
+}
+
+/**************ADMIN**************/
+.booking-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+}
+.headerBookings, .bodyBookings{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.headerBookings{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(143, 102, 49, 0.6);
+}
+.item{
+    width: 100%;
+    padding: 20px 0;
 }
